@@ -1,0 +1,6 @@
+*.[oa]
+*~
+*.ini
+node_modules/
+demo/libs/
+demo/notes

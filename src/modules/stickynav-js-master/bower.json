@@ -1,0 +1,22 @@
+{
+  "name": "stickynav-js",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "WahaWaher"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "demo/libs/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "animate.css": "^3.7.0"
+  }
+}

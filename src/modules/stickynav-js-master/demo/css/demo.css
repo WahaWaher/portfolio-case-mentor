@@ -1,0 +1,30 @@
+@charset "UTF-8";
+.site-header {
+	padding: 15px 0;
+	background: #f1f1f1;
+}
+
+.site-title, .site-logo, .site-icon {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0;
+}
+
+.site-icon {
+	float: right;
+}
+
+.site-logo {
+	margin-right: 15px;
+}
+
+/* Классы для 'mode' == 'custom' */
+/* Парметры анимации */
+.animation-options {
+	-webkit-animation-duration: .85s;
+	        animation-duration: .85s;
+	/* Продолжительность */
+	-webkit-animation-delay: 0s;
+	        animation-delay: 0s;
+	/* Задержка */
+}

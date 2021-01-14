@@ -1,0 +1,93 @@
+/**
+ * App Icon Font
+ * https://icomoon.io
+ */
+$icomoon-font-path: '../../fonts' !default;
+
+@font-face {
+  font-family: 'AppIconFont';
+  src:
+    url('#{$icomoon-font-path}/AppIconFont/AppIconFont.ttf') format('truetype'),
+    url('#{$icomoon-font-path}/AppIconFont/AppIconFont.woff') format('woff'),
+    url('#{$icomoon-font-path}/AppIconFont/AppIconFont.svg#AppIconFont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+[class^="aif-"], [class*=" aif-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'AppIconFont' !important;
+  speak: none;
+  font-style: normal;
+  line-height: inherit;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  // vertical-align: middle;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.aif-close-circle:before {
+  content: "\e904";
+}
+.aif-rub:before {
+  content: "\e903";
+}
+.aif-alarm-collage:before {
+  content: "\e91a";
+}
+.aif-assistance-collage:before {
+  content: "\e91b";
+}
+.aif-crossroads-collage:before {
+  content: "\e91c";
+}
+.aif-diagnostics-collage:before {
+  content: "\e91d";
+}
+.aif-escort-collage:before {
+  content: "\e91e";
+}
+.aif-idea-collage:before {
+  content: "\e91f";
+}
+.aif-integration-collage:before {
+  content: "\e920";
+}
+.aif-key-collage:before {
+  content: "\e921";
+}
+.aif-knowledge-collage:before {
+  content: "\e922";
+}
+.aif-money-box-collage:before {
+  content: "\e923";
+}
+.aif-notebook-collage:before {
+  content: "\e924";
+}
+.aif-protection-collage:before {
+  content: "\e925";
+}
+.aif-puzzle-collage:before {
+  content: "\e926";
+}
+.aif-thinking-collage:before {
+  content: "\e927";
+}
+.aif-arrow-right:before {
+  content: "\e900";
+}
+.aif-copyright:before {
+  content: "\e901";
+}
+.aif-flag:before {
+  content: "\e902";
+}
+.aif-phone-circle:before {
+  content: "\e907";
+}

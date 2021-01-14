@@ -1,0 +1,38 @@
+// Header
+
+.site-header {
+	padding: 15px 0;
+	background: #f1f1f1;
+}
+
+.site-title, .site-logo, .site-icon {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0;
+}
+
+.site-icon {
+	float: right;
+}
+
+.site-logo {
+	margin-right: 15px;
+}
+
+/* Классы для 'mode' == 'custom' */
+// .sticky {
+// 	position: fixed;
+// 	top: -100px; right: 0; left: 0;
+// 	opacity: 0;
+// 	transition: all .5s;
+// }
+// .visible {
+// 	top: 0;
+// 	opacity: 1;
+// }
+
+/* Парметры анимации */
+.animation-options {
+	animation-duration: .85s; /* Продолжительность */
+	animation-delay: 0s; /* Задержка */
+}

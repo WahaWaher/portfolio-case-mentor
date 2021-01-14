@@ -1,0 +1,72 @@
+// Colors
+$white: #fff;
+$black: #222;
+$grey: #bbb;
+
+$primary: #214461; // section datrk bg
+$primary-1: #2c5679; // tables on section bg
+$primary-2: #3f749e; $primary-title: #3f749e; // titles and accent text
+$primary-3: #417199; // tables on section bg (hover)
+$primary-4: #577186; $primary-text: #577186; // text color
+$primary-5: #e9f4fe; $primary-extra-light: #e9f4fe; // section extra light bg
+$primary-dark: #1e3d56; // section extra dark bg
+
+$size-xs: 16px;
+$size-sm: 18px;
+$size-md: 20px;
+$size-lg: 22px;
+$size-xl: 24px;
+$size-xxl: 26px;
+
+$accent: #ff8100; // main accent color
+$accent-dim: #ee6b21; // icons, interactiveelements, buttons
+
+$border-radius: 5px;
+
+// Typography
+$app-font: 'Arial', sans-serif;
+$app-icon-font: 'AppIconFont';
+$app-font-size: 20px;
+$app-line-height: 1.15;
+$app-font-weight: 400;
+$app-letter-spacing: normal; // 0.05em === 50(photoshop)/1000
+
+// $accent-font: '', sans-serif;
+// $deco-font: '', sans-serif;
+
+// Transitions
+$trs: .15s;
+
+// Bootstrap grid/utils
+$grid-breakpoints: (
+  xs: 0, // 0-575
+  sm: 576px, // 576-767
+  md: 768px, // 768-991
+  lg: 992px, // 992-1279
+  xl: 1280px, // 1280-...
+  xxl: 1440px,
+  // xxxl: 1920px
+);
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1200px,
+  // xxl: 1380px,
+  // xxxl: 1720px
+);
+
+$grid-columns: 12;
+$grid-gutter-width: 30px;
+
+$spacer: 1rem;
+$spacers: (0: 0,
+  1: ($spacer * .25),
+  2: ($spacer * .5),
+  3: $spacer,
+  4: ($spacer * 1.5),
+  5: ($spacer * 3),
+  6: ($spacer * 4.25),
+  // 7: ($spacer * 5),
+  gap: $grid-gutter-width / 2
+);

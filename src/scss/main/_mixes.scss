@@ -1,0 +1,256 @@
+/**
+ * Common application mixes (BEM)
+ */
+
+/**
+ * Mix: text
+ */
+.text {
+  // Colors
+  &-primary {
+    color: $primary;
+  }
+  &-primary-1 {
+    color: $primary-1;
+  }
+  &-primary-2,
+  &-primary-title {
+    color: $primary-2;
+  }
+  &-primary-3 {
+    color: $primary-3;
+  }
+  &-primary-4,
+  &-primary-text {
+    color: $primary-4;
+  }
+  &-primary-5,
+  &-primary-extra-light {
+    color: $primary-5;
+  }
+  &-accent {
+    color: $accent;
+  }
+  &-accent-dim {
+    color: $accent-dim;
+  }
+  &-white {
+    color: $white;
+  }
+  // Other
+  &-nowrap {
+    white-space: nowrap;
+  }
+  &-middle {
+    vertical-align: middle;
+  }
+  &-uppercase {
+    text-transform: uppercase;
+  }
+  &-indent {
+    &-default {
+      text-indent: 0.85em;
+    }
+  }
+}
+
+/**
+ * Mix: size-{}
+ */
+.size {
+  &-xs {
+    font-size: 16px !important;
+  }
+  &-sm {
+    font-size: 18px !important;
+  }
+  &-md {
+    font-size: 20px !important;
+  }
+  &-lg {
+    font-size: 22px !important;
+  }
+  &-xl {
+    font-size: 24px !important;
+  }
+  &-xxl {
+    font-size: 26px !important;
+  }
+}
+
+/**
+ * Mix: font-{}
+ */
+.font {
+  &-weight {
+    &-700 {
+      font-weight: 700 !important;
+    }
+  }
+  &-weight {
+    &-bold {
+      font-weight: 700 !important;
+    }
+  }
+}
+
+
+/**
+ * Mix: pos-{}
+ */
+.pos {
+  &-relative {
+    position: relative !important;
+  }
+}
+
+// @each $breakpoint in map-keys(map-remove($grid-breakpoints, sm, md, lg, xl, xxl, xxxl)) {
+//   @include media-breakpoint-up($breakpoint) {
+//     $infix: breakpoint-infix($breakpoint, map-remove($grid-breakpoints, xl, xxl, xxxl));
+
+//     .pos#{$infix} {
+//       // &-absolute {
+//       //   position: absolute !important;
+//       // }
+//       // &-relative {
+//       //   position: relative !important;
+//       // }
+//       // &-static {
+//       //   position: static !important;
+//       // }
+//     }
+//   }
+// }
+
+/**
+ * Mix: z-{}
+ */
+.z {
+  &-1 {
+    z-index: 1 !important;
+  }
+  &-2 {
+    z-index: 2 !important;
+  }
+}
+
+/**
+ * Mix: opacity-{50}
+ */
+.opacity {
+  &-70 {
+    opacity: .7;
+  }
+}
+
+/**
+ * Mix: bg-{}
+ */
+.bg {
+  // Colors
+  &-white {
+    background-color: $white;
+  }
+  &-primary {
+    background-color: $primary;
+  }
+  &-primary-1 {
+    background-color: $primary-1;
+  }
+  &-primary-2,
+  &-primary-title {
+    background-color: $primary-2;
+  }
+  &-primary-3 {
+    background-color: $primary-3 !important;
+  }
+  &-primary-4,
+  &-primary-text {
+    background-color: $primary-4;
+  }
+  &-primary-5,
+  &-primary-extra-light {
+    background-color: $primary-5;
+  }
+  &-primary-dark {
+    background-color: $primary-dark;
+  }
+}
+
+/**
+ * Mix: w-{}
+ */
+.w {
+  &-100 {
+    width: 100% !important;
+  }
+}
+
+/**
+ * Mix: maw-{}
+ */
+.maw {
+  &-360 {
+    max-width: 360px;
+  }
+  &-380 {
+    max-width: 380px;
+  }
+  &-180 {
+    max-width: 180px;
+  }
+}
+
+/**
+ * Mix: h-{}
+ */
+.h {
+  &-100 {
+    height: 100% !important;
+  }
+}
+
+/**
+ * Mix: img-{}
+ */
+.img {
+  &-cover {
+    object-fit: cover;
+    font-family: "object-fit: cover;";
+  }
+  &-contain {
+    object-fit: contain;
+    font-family: "object-fit: contain;";
+  }
+  // &-full {
+  //   display: block;
+  //   width: 100%;
+  //   height: 100%;
+  // }
+}
+
+/**
+ * Mix: list-{}
+ */
+.list-empty {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/**
+ * Mix: select-none
+ */
+.select-none {
+  user-select: none;
+  touch-action: manipulation;
+}
+
+/**
+ * Mix: cursor-{}
+ */
+.cursor {
+  &-pointer {
+    cursor: pointer !important;
+  }
+}

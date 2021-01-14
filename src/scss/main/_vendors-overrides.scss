@@ -1,0 +1,93 @@
+/**
+ * Fancybox global overrides
+ */
+// Gallery styles
+.fancybox {
+  &-bg {
+    background-color: #eee;
+  }
+  &-thumbs__list {
+    a {
+      &:before {
+        border: 3px solid $accent;
+      }
+    }
+  }
+  &-progress {
+    background: $accent;
+  }
+  &-is-open {
+    .fancybox-bg {
+      opacity: .92;
+    }
+  }
+}
+// Scroll
+.compensate-for-scrollbar {
+  margin-right: 0 !important;
+}
+
+/**
+ * Lazyload
+ */
+.lazyload,
+.lazyloading {
+  opacity: 0;
+}
+.lazyloaded {
+  opacity: 1;
+  transition: opacity .5s;
+}
+
+/**
+ * Hamburger
+ */
+.hamburger {
+  display: flex;
+  padding: 5px 0;
+  &:not(.is-active) {
+    .hamburger-inner {
+      &::before {
+        width: 40px;
+        left: 7px;
+      }
+      &::after {
+        width: 40px;
+        left: 7px;
+      }
+    }
+  }
+}
+
+/**
+ * wDrawer
+ */
+.wdrawer-backdrop {
+  background-color: #eee;
+  z-index: 1000;
+  pointer-events: none;
+  &.is-active {
+    pointer-events: initial;
+    opacity: 0.92;
+  }
+}
+
+/**
+ * Block: sticky-nav
+ */
+.sticky-nav {
+  position: fixed;
+  top: -100px;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  transition: all .5s;
+}
+.visible {
+  top: 0;
+  opacity: 1;
+}
+.animation-options {
+  animation-duration: .7s;
+  animation-delay: 0s;
+}

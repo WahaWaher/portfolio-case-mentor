@@ -1,0 +1,541 @@
+/**
+ * Application sections
+ * Blocks (BEM)
+ */
+
+/**
+ * Section: sct
+ */
+.sct {
+  position: relative;
+
+  &__content {
+    position: relative;
+    z-index: 2;
+  }
+
+  &_pads {
+    &_default {
+      padding: 100px 0;
+      &-top {
+        padding-top: 100px;
+      }
+      &-bottom {
+        padding-bottom: 100px;
+      }
+    }
+    &_small {
+      padding: 50px 0;
+      &-top {
+        padding-top: 50px;
+      }
+      &-bottom {
+        padding-bottom: 50px;
+      }
+    }
+  }
+
+  &__deco-clouds {
+    position: absolute;
+    top: 0;
+    right: 0;
+    user-select: none;
+    z-index: 2;
+    user-select: none;
+    pointer-events: none;
+    > img {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    &_type_1,
+    &_type_3,
+    &_type_4 {
+      > img {
+        object-fit: contain;
+        font-family: "object-fit: contain;";
+      }
+    }
+
+    &_type_1 {
+      width: 1350px;
+      height: 450px;
+      left: 200px;
+      transform: translateY(-59%);
+      @include media-breakpoint-down(lg) {
+        width: 850px;
+        height: 335px;
+        transform: translateY(-70%);
+      }
+      @include media-breakpoint-down(sm) {
+        left: -100px;
+      }
+      > img {}
+    }
+
+    &_type_3 {
+      width: 1625px;
+      height: 650px;
+      top: 0;
+      left: 43.75%;
+      right: auto;
+      bottom: 0;
+      transform: translateY(-53%);
+      @include media-breakpoint-down(md) {
+        width: 1130px;
+        height: 400px;
+        left: 16%;
+        transform: translateY(-46%);
+      }
+      @include media-breakpoint-down(sm) {
+        left: -22%;
+      }
+      @include media-breakpoint-down(xs) {
+        height: 300px;
+        left: auto;
+        right: -460px;
+      }
+      > img {}
+    }
+
+
+    &_type_4 {
+      width: 1388px;
+      height: 320px;
+      top: 0;
+      left: 34.15%;
+      right: auto;
+      bottom: 0;
+      transform: translateY(-60%);
+      @include media-breakpoint-down(md) {
+        left: -32%;
+        transform: translateY(-79%);
+      }
+      @include media-breakpoint-down(xs) {
+        width: 690px;
+        left: auto;
+        right: -100px;
+        transform: translateY(-81%);
+      }
+      > img {}
+    }
+  }
+}
+
+/**
+ * Section: app
+ */
+.app {}
+
+/**
+ * Section: app-header
+ */
+.app-header {
+  padding: 18px 0;
+  &__menu-main {
+    font-size: $size-sm;
+    @include media-breakpoint-down(lg) {}
+    > li {}
+  }
+  &.sticky-nav {
+    background-color: rgba($white, .92);
+    box-shadow: -10px -25px 50px -2px rgba($black, 0.45);
+    padding: 8px 0;
+    z-index: 10;
+    .app-header__socials {
+      display: none !important;
+    }
+    .app-header__menu-main {
+      font-size: 0.85rem;
+    }
+    .app-header__phone {
+      font-size: .85rem;
+    }
+    .app-header__menu-main {
+      > li > a {
+        padding-top: 0.35em;
+        padding-bottom: 0.35em;
+      }
+    }
+  }
+}
+
+/**
+ * Section: app-page
+ */
+.app-page {}
+
+/**
+ * Section: app-footer
+ */
+.app-footer {
+  padding: 40px 0 60px 0;
+  @include media-breakpoint-down(xs) {
+    padding: 30px 0 35px 0;
+  }
+  &__main-menu {
+    font-size: $size-xs;
+    font-weight: 700;
+    @include media-breakpoint-down(xs) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+/**
+ * Section: app-drawer
+ */
+.app-drawer {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  color: $white;
+  background-color: rgba($primary, .98);
+  opacity: 1;
+  transition: all $trs * 2;
+  @media (max-width: 374px) {
+    max-width: 320px;
+  }
+  &.is-open {
+    box-shadow: -10px -25px 50px -30px rgba(0, 0, 0, 0.45);
+    opacity: 1;
+  }
+  &__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 72px;
+    padding: 18px 20px 18px 40px;
+  }
+  &__content {
+    padding: 18px 20px 40px 40px;
+  }
+  &__btn-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 3.5px;
+  }
+}
+
+/**
+ * Section: sct-ms
+ */
+.sct-ms {
+  padding: 55px 0 145px 0;
+  @include media-breakpoint-down(md) {
+    padding-bottom: 100px;
+  }
+  @include media-breakpoint-down(xs) {
+    padding-top: 0;
+  }
+  &__illustration {
+    position: absolute;
+    top: -32px;
+    left: -260px;
+    width: 1024px;
+    height: 555px;
+    user-select: none;
+    z-index: -1;
+    user-select: none;
+    pointer-events: none;
+    @include media-breakpoint-down(xl) {
+      left: -335px;
+    }
+    @include media-breakpoint-down(lg) {
+      left: -365px;
+    }
+    @include media-breakpoint-down(md) {
+      position: static;
+      width: 100%;
+      height: 355px;
+    }
+    @include media-breakpoint-down(sm) {
+      height: 275px;
+    }
+    > img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+      font-family: "object-fit: cover; object-position: top;";
+    }
+    &-box-top {
+      padding-top: 180px;
+      @include media-breakpoint-down(md) {
+        padding-top: 30px;
+      }
+      @include media-breakpoint-down(xs) {
+        padding-top: 0;
+      }
+    }
+    &-box-bottom {
+      padding-top: 310px;
+      @include media-breakpoint-down(lg) {
+        padding-top: 235px;
+      }
+      @include media-breakpoint-down(md) {
+        padding-top: 0;
+      }
+    }
+  }
+}
+
+/**
+ * Block: sct-picturize-right
+ */
+.sct-picturize-right {
+  &__img-main-container {
+    min-height: 430px;
+    margin-bottom: -100px;
+    position: relative;
+    @include media-breakpoint-down(md) {
+      margin-bottom: 0;
+      min-height: auto;
+    }
+  }
+  &__img-main,
+  &__img-sub {
+    position: absolute;
+    > img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      user-select: none;
+    }
+  }
+  &__img-main {
+    top: -88px;
+    left: 0;
+    bottom: 0;
+    width: 1255px;
+    user-select: none;
+    pointer-events: none;
+    @include media-breakpoint-down(md) {
+      width: 160%;
+      position: static;
+      top: 0;
+    }
+    > img {
+      object-fit: contain;
+      object-position: left bottom;
+      font-family: "object-fit: contain; object-position: left bottom;";
+      @include media-breakpoint-down(md) {
+        position: static;
+      }
+    }
+  }
+  &__img-sub {
+    left: 28%;
+    bottom: -175px;
+    width: 990px;
+    height: 300px;
+    @include media-breakpoint-down(md) {
+      width: 1000px;
+      height: 310px;
+      left: -20%;
+      bottom: -135px;
+    }
+    @include media-breakpoint-down(sm) {
+      left: -225px;
+      bottom: -200px;
+    }
+    > img {
+      object-fit: contain;
+      font-family: "object-fit: contain;";
+    }
+  }
+}
+
+/**
+ * Block: sct-training-right
+ */
+.sct-training-right {
+  &__img-main-container {
+    margin-bottom: -100px;
+    position: relative;
+    @include media-breakpoint-down(md) {
+      padding-bottom: 270px;
+    }
+    @include media-breakpoint-down(xs) {}
+  }
+  &__img-main,
+  &__img-sub {
+    position: absolute;
+    > img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      user-select: none;
+    }
+  }
+  &__img-main {
+    top: -88px;
+    left: 160px;
+    bottom: 0;
+    width: 860px;
+    user-select: none;
+    pointer-events: none;
+    @include media-breakpoint-down(md) {
+      width: 100%;
+      left: 0;
+      right: 0;
+      top: auto;
+      bottom: 0;
+      height: 300px;
+    }
+    @include media-breakpoint-down(sm) {}
+    > img {
+      object-fit: contain;
+      object-position: left bottom;
+      font-family: "object-fit: contain; object-position: left bottom;";
+      @include media-breakpoint-down(md) {
+        object-fit: contain;
+        object-position: right bottom;
+        font-family: "object-fit: contain; object-position: right bottom;";
+      }
+    }
+  }
+}
+
+/**
+ * Sections: sct-schedule, sct-contacts, sct-schedule
+ */
+.sct-warranty,
+.sct-contacts,
+.sct-schedule {
+  &__img-main {
+    position: absolute;
+    bottom: 0;
+    user-select: none;
+    pointer-events: none;
+    > img {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: bottom right;
+      font-family: "object-fit: contain; object-position: bottom right;";
+    }
+  }
+}
+
+/**
+ * Section: sct-schedule
+ */
+.sct-schedule {
+  &__img-main-container {
+    min-height: 300px;
+    margin-top: -160px;
+    margin-bottom: -100px;
+    @include media-breakpoint-down(md) {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    @include media-breakpoint-down(xs) {
+      min-height: 175px;
+    }
+  }
+  &__img-main {
+    top: 0;
+    left: 0;
+    width: 800px;
+    user-select: none;
+    pointer-events: none;
+    @include media-breakpoint-down(xs) {
+      width: 410px;
+      left: 48px;
+    }
+    > img {}
+  }
+}
+
+/**
+ * Section: sct-contacts
+ */
+.sct-contacts {
+  &__contact-box {
+    @include media-breakpoint-down(md) {
+      .contact-box__text {
+        font-size: 20px !important;
+      }
+    }
+  }
+  &__img-main-container {
+    min-height: 160px;
+    user-select: none;
+    pointer-events: none;
+    @include media-breakpoint-down(md) {
+      min-height: 325px;
+    }
+  }
+  &__img-main {
+    position: absolute;
+    top: -80px;
+    left: -107%;
+    width: 1460px;
+    height: 715px;
+    @include media-breakpoint-down(lg) {
+      left: -177%;
+    }
+    @include media-breakpoint-down(md) {
+      width: 1000px;
+      height: 490px;
+      left: -25%;
+    }
+    @include media-breakpoint-down(sm) {
+      width: 850px;
+      height: 415px;
+      top: 0;
+      left: 0;
+      transform: translateX(-32%);
+    }
+    > img {}
+  }
+}
+
+
+
+/**
+ * Section: sct-warranty
+ */
+.sct-warranty {
+  &__img-main-container {
+    min-height: 355px;
+    @include media-breakpoint-down(sm) {
+      min-height: 225px;
+    }
+  }
+  &__img-main {
+    top: -105px;
+    left: -92%;
+    width: 1365px;
+    height: 730px;
+    @include media-breakpoint-down(md) {
+      top: -80px;
+      left: -42%;
+      width: 1300px;
+    }
+    @include media-breakpoint-down(sm) {
+      left: 0;
+      width: 875px;
+      height: 470px;
+      transform: translateX(-29%);
+    }
+    > img {}
+  }
+}
